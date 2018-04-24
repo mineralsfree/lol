@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.214,C:\Users\MI\Documents\GitHub\First_profit\Vedom2.pas=C:\Users\MI\Documents\GitHub\First_profit\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.573,C:\Users\MI\Documents\GitHub\First_profit\vedom.pas=C:\Users\MI\Documents\GitHub\First_profit\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.385,=C:\Users\MI\Documents\GitHub\First_profit\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.605,=C:\Users\MI\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.203,=C:\Users\MI\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.588,C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit2.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.476,=C:\Users\MI\Documents\GitHub\First_profit\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.264,C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit1.dfm=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\OnCreate.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.979,C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\SplashScreen.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.342,C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\SplashScreen.pas=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\SplashScree.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.434,=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.830,C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit1.pas=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\SplashScreen.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.264,C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit1.pas=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\OnCreate.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.979,C:\Users\MI\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\MI\Documents\Embarcadero\Studio\Projects\SplashScreen.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.582,=C:\Users\MI\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.188,C:\Users\MI\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.309,C:\Users\MI\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\MI\Documents\Embarcadero\Studio\Projects\Spravochnik_1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.735,C:\Users\MI\Documents\Embarcadero\Studio\Projects\SplashScreen.pas=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\SplashScreen.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.345,C:\Users\MI\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.371,=C:\Users\MI\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.689,=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.273,C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\SplashScree.pas=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\SplashScreen.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.500,C:\Users\MI\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.345,C:\Users\MI\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.039,=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.323,C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Unit3.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.410,C:\Users\MI\Documents\Embarcadero\Studio\Projects\Spravochnik_1.pas=C:\Users\MI\Google Диск\ЯП\Lab_2\First_profit\Spravochnik_1.pas</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="OnCreate.pas"/>
+    <File Path="OnCreate.dfm"/>
+    <File Path="SplashScreen.pas"/>
+    <File Path="Spravochnik_1.pas"/>
+    <File Path="vedom.pas"/>
+    <File Path="Vedom2.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>
