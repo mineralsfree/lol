@@ -3,10 +3,10 @@ unit Vedom2;
 interface
 uses
   SysUtils, Vcl.Grids, Vcl.Dialogs,Spravochnik_1, DateUtils,VCLTee.Chart,Vcl.ColorGrd,FMX.Colors, Vcl.Graphics;
-procedure formVedom1(cht1:Tchart;Grid: TStringGrid; ProdHead:PProductList; ShopHead: PShopList; SectHead: PSectorList; id:integer);
+procedure formVedom1({cht1:Tchart;}Grid: TStringGrid; ProdHead:PProductList; ShopHead: PShopList; SectHead: PSectorList; id:integer);
 implementation
 
-procedure formVedom1(cht1:Tchart;Grid: TStringGrid; ProdHead:PProductList; ShopHead: PShopList; SectHead: PSectorList; id:Integer);
+procedure formVedom1({cht1:Tchart;}Grid: TStringGrid; ProdHead:PProductList; ShopHead: PShopList; SectHead: PSectorList; id:Integer);
 var
   i,j: integer;
   currnum: integer;
@@ -18,7 +18,7 @@ var
   shopPrice: Currency;
   totalPrice: Currency;
 begin
-cht1.Visible:=True;
+//cht1.Visible:=True;
   tmpProd:=ProdHead;
     for i := 0 to Grid.ColCount do
     for j := 0 to Grid.RowCount do
@@ -40,7 +40,7 @@ cht1.Visible:=True;
 
     tmpSect := SectHead^.Adr;
     shopPrice := 0;
-    cht1.Series[0].Clear;
+    //cht1.Series[0].Clear;
 
 
     while tmpSect <> nil  do
@@ -63,11 +63,11 @@ cht1.Visible:=True;
       end;
       if kek then
       begin
-      cht1.series[0].Active:=true;
+      {cht1.series[0].Active:=true;
       cht1.SeriesList.Create;
       cht1.series[0].Add(sectPrice, IntToStr(currnum));
 
-      cht1.Series[0].Repaint;
+      cht1.Series[0].Repaint;  }
 
       Grid.Cells[4,Grid.RowCount-1] := CurrToStr(sectprice);
       Grid.RowCount := Grid.RowCount + 1;

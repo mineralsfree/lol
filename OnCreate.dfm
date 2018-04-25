@@ -726,47 +726,6 @@ object Form1: TForm1
     TabOrder = 2
     OnClick = btn2Click
   end
-  object cht1: TChart
-    Left = 384
-    Top = 333
-    Width = 223
-    Height = 167
-    Title.Text.Strings = (
-      'TChart')
-    View3D = False
-    View3DOptions.Elevation = 315
-    View3DOptions.Orthogonal = False
-    View3DOptions.Perspective = 0
-    View3DOptions.Rotation = 360
-    TabOrder = 3
-    DefaultCanvas = 'TGDIPlusCanvas'
-    ColorPaletteIndex = 13
-    object psrsSeries1: TPieSeries
-      Title = 'Series1'
-      XValues.Order = loAscending
-      YValues.Name = 'Pie'
-      YValues.Order = loNone
-      Frame.InnerBrush.BackColor = clRed
-      Frame.InnerBrush.Gradient.EndColor = clGray
-      Frame.InnerBrush.Gradient.MidColor = clWhite
-      Frame.InnerBrush.Gradient.StartColor = 4210752
-      Frame.InnerBrush.Gradient.Visible = True
-      Frame.MiddleBrush.BackColor = clYellow
-      Frame.MiddleBrush.Gradient.EndColor = 8553090
-      Frame.MiddleBrush.Gradient.MidColor = clWhite
-      Frame.MiddleBrush.Gradient.StartColor = clGray
-      Frame.MiddleBrush.Gradient.Visible = True
-      Frame.OuterBrush.BackColor = clGreen
-      Frame.OuterBrush.Gradient.EndColor = 4210752
-      Frame.OuterBrush.Gradient.MidColor = clWhite
-      Frame.OuterBrush.Gradient.StartColor = clSilver
-      Frame.OuterBrush.Gradient.Visible = True
-      Frame.Width = 4
-      OtherSlice.Legend.Visible = False
-      Data = {0000000000}
-      Detail = {0000000000}
-    end
-  end
   object mm1: TMainMenu
     object N11: TMenuItem
       Caption = #1057#1087#1088#1072#1074#1086#1095#1085#1080#1082'_1'
