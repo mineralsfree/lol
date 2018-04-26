@@ -5,8 +5,7 @@ interface
 uses
    Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls,  Vcl.Forms,pngimage, Vcl.Dialogs, Vcl.ExtCtrls, SplashScreen, Vcl.StdCtrls, ComObj,  Vcl.Grids,
-  Vcl.Menus, Spravochnik_1,vedom,Vedom2, VclTee.TeeGDIPlus, VCLTee.TeEngine,
-  VCLTee.Series, VCLTee.TeeProcs, VCLTee.Chart;
+  Vcl.Menus, Spravochnik_1,vedom,Vedom2;
 
 type
    Tmode = (spr1, spr2, ved1, ved2, main);
