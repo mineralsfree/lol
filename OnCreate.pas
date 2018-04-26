@@ -209,8 +209,9 @@ procedure TForm1.strngrd1MouseUp(Sender: TObject; Button: TMouseButton;
    var flag:Boolean;
 begin
   strngrd1.MouseToCell(X,Y,Acol,Arow);
+
   flag:=False;
-  if Arow<>0 then
+  if Arow>0 then
   begin
     case mode of
      spr1:       //SHOPLIST
@@ -340,21 +341,10 @@ begin
         end;
     end;
   end
-  {else
-  case Acol of
-    0:
-    begin
-    sortProdList(producthead,ArtIDsort);
-    writeProdList(strngrd1,producthead,shophead,sectorhead);
-    end;
-    2:
-    begin
-    sortProdList(producthead,ShopIDsort);
-    end;
-    3:
-    begin
-    sortProdList(producthead,SectIDsort);
-    end;
-  end;  }
+    else        ;
 end;
+
+
+
+
 end.

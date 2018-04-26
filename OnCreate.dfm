@@ -691,9 +691,9 @@ object Form1: TForm1
   end
   object strngrd1: TStringGrid
     Left = 0
-    Top = 32
-    Width = 985
-    Height = 265
+    Top = 0
+    Width = 1001
+    Height = 242
     ColCount = 7
     DefaultColWidth = 120
     RowCount = 2
