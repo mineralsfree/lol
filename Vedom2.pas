@@ -2,7 +2,7 @@ unit Vedom2;
 
 interface
 uses
-  SysUtils, Vcl.Grids, Vcl.Dialogs,Spravochnik_1, DateUtils,VCLTee.Chart,Vcl.ColorGrd,FMX.Colors, Vcl.Graphics;
+  SysUtils, Vcl.Grids, Vcl.Dialogs,Spravochnik_1, DateUtils,Vcl.ColorGrd,FMX.Colors, Vcl.Graphics;
 procedure formVedom1({cht1:Tchart;}Grid: TStringGrid; ProdHead:PProductList; ShopHead: PShopList; SectHead: PSectorList; id:integer);
 implementation
 
