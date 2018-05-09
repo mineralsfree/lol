@@ -70,6 +70,7 @@ procedure TForm1.btn1Click(Sender: TObject);
 var shoplistkek:TShopInfo;
 var prodlistkek:TProductInfo;
 var flag:Boolean;
+str:string;
 begin
 
 case mode of
@@ -77,9 +78,20 @@ case mode of
     begin
           inc(kek);
          shoplistkek.id:=kek;
-         shoplistkek.name:=InputBox('','','Магазин_'+IntToStr(kek));
-         shoplistkek.adress:=InputBox('','','платонова');
-         shoplistkek.tel:=InputBox('','','+37529235232');
+
+         if InputQuery('name','',str) then
+          shoplistkek.name:=str
+            else Exit;
+                     if InputQuery('adress','',str) then
+          shoplistkek.adress:=str
+            else Exit;
+                     if InputQuery('tel','',str) then
+          shoplistkek.tel:=str
+            else Exit;
+
+        // shoplistkek.name:=InputBox('','','Магазин_'+IntToStr(kek));
+         //shoplistkek.adress:=InputBox('','','платонова');
+         //shoplistkek.tel:=InputBox('','','+37529235232');
          insertShopList(shophead,shoplistkek);
          writeShopList(strngrd1,shophead);
     end;
@@ -87,13 +99,53 @@ case mode of
     begin
       if (shophead.Adr<>nil)  and (sectorhead.Adr<>nil) then
       begin
-      prodlistkek.shopid:=GetProdShopID(shophead);
-      prodlistkek.sectid:=GetProdsectID(sectorhead);
-      prodlistkek.Date:=GetProdDate;
+        if InputQuery('shopID','',str) then
+
+        if not(isShopIDFound(shophead,StrToInt(str))) then
+        begin
+        ShowMessage('Нет такого магазина');
+        exit;
+        end
+        else
+        prodlistkek.shopid:=StrToInt(str)
+        else Exit;
+
+        if InputQuery('shopID','',str) then
+
+        if not(isSectIDFound(sectorhead,StrToInt(str))) then
+        begin
+        ShowMessage('Нет такой секции');
+         exit;
+        end
+        else
+        prodlistkek.sectid:=StrToInt(str)
+        else Exit;
+
+     // prodlistkek.shopid:=GetProdShopID(shophead);
+      //prodlistkek.sectid:=GetProdsectID(sectorhead);
+                           if InputQuery('Date','',str) then
+           prodlistkek.Date:=strtodate(str)
+            else Exit;
+      //prodlistkek.Date:=GetProdDate;
+
       prodlistkek.VendorCode:=GetProdVendor(producthead);
-      prodlistkek.Name:=InputBox('Введите название товара','товар','майка');
-      prodlistkek.Count:=GetProdCount;
-      prodlistkek.Price:=GetProdPrice;
+      if InputQuery('name','',str) then
+           prodlistkek.name:=str
+            else Exit;
+            if InputQuery('Vendor code','',str) then
+           prodlistkek.VendorCode:=str
+            else Exit;
+
+      //prodlistkek.Name:=InputBox('Введите название товара','товар','майка');
+
+      if InputQuery('Count','',str) then
+           prodlistkek.Count:=strtoint(str)
+            else Exit;
+     // prodlistkek.Count:=GetProdCount;
+     if InputQuery('Price','',str) then
+           prodlistkek.Price:=strtocurr(str)
+            else Exit;
+     // prodlistkek.Price:=GetProdPrice;
       insertProdList(producthead,prodlistkek);
       writeProdList(strngrd1,producthead,shophead,sectorhead);
       end;
@@ -114,6 +166,7 @@ case mode of
   end;
   main:
   begin
+
   sortProdList(producthead,top12);
   writeProdList(strngrd1,producthead,shophead,sectorhead);
   //cht1.Visible:=False;
@@ -206,6 +259,7 @@ procedure TForm1.strngrd1MouseUp(Sender: TObject; Button: TMouseButton;
    var prodlistkek:TProductInfo;
    var id2:string;
    var flag:Boolean;
+   str1:string;
 begin
   strngrd1.MouseToCell(X,Y,Acol,Arow);
 
@@ -242,9 +296,22 @@ begin
             Inc(hehid);
              sectlistkek.id:=HehID;
              sectlistkek.shopid:=StrToInt(strngrd1.Cells[0,Arow]);
-             sectlistkek.name:=InputBox('Введите имя секора','имя:','Молочные продукты');
-             sectlistkek.zav:=InputBox('Заведующий сектором','имя','Вася');
-             sectlistkek.tel:=InputBox('Телефон','номер:','+37529235232');
+
+            if InputQuery('name','',str1) then
+           sectlistkek.name:=str1
+            else Exit;
+            if InputQuery('zav','',str1) then
+           sectlistkek.zav:=str1
+            else Exit;
+            if InputQuery('tel','',str1) then
+           sectlistkek.tel:=str1
+            else Exit;
+
+
+           //  sectlistkek.name:=InputBox('Введите имя секора','имя:','Молочные продукты');
+
+           //  sectlistkek.zav:=InputBox('Заведующий сектором','имя','Вася');
+            // sectlistkek.tel:=InputBox('Телефон','номер:','+37529235232');
              insertSectList(sectorhead,sectlistkek);
 
              Exit;
