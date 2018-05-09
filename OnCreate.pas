@@ -396,6 +396,8 @@ begin
           7:
             begin
             deleteProdList(producthead,id2);
+               writeProdList(strngrd1,producthead,shophead,sectorhead);
+
             Exit;
             end;
           end;
